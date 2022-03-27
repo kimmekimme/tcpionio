@@ -13,7 +13,7 @@ public class Client {
     Socket socket;
     BufferedWriter bufferedWriter;
 
-    private void clientStart() throws IOException {
+    protected void clientStart() throws IOException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("전송할 파일의 경로를 입력하세요: ");
         String filePath = scanner.nextLine();
